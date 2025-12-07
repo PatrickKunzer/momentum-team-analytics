@@ -1,0 +1,41 @@
+/* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark: #001b41;
+  --primary-blue: #003d8f;
+  --primary-purple: #560e8a;
+  --accent-magenta: #d746f5;
+  --accent-cyan: #00d4ff;
+  --bg-light: #fafafa;
+  --bg-card: #f4f7fa;
+  --bg-card-hover: #edf2f7;
+  --text-primary: #001b41;
+  --text-secondary: #718095;
+  --text-muted: #97a3b4;
+  --white: #ffffff;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Overpass', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+}

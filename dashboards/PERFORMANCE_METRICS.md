@@ -1,4 +1,4 @@
-![Momentum Team](../../MomentumTeam-hor.png)
+![Momentum Team](../assets/MomentumTeam-hor.png)
 
 # Performance & Error Metrics Dashboard
 

@@ -1,4 +1,4 @@
-![Momentum Team](../../MomentumTeam-hor.png)
+![Momentum Team](../assets/MomentumTeam-hor.png)
 
 # Phase 5: Optimization
 

@@ -1,4 +1,4 @@
-![Momentum Team](../MomentumTeam-hor.png)
+![Momentum Team](./assets/MomentumTeam-hor.png)
 
 # Momentum Analytics Framework
 
@@ -16,6 +16,7 @@ Comprehensive documentation for the Momentum Team analytics system.
 | [Event Schema](./events/README.md) | Complete Event Catalog with Properties | Developers, Data Engineers |
 | [Dashboards](./dashboards/README.md) | KPIs, Metrics, Dashboard Layouts | Product Owners, Data Analysts |
 | [Implementation](./implementation/README.md) | Phase Plan, Code Examples, Checklists | Developers |
+| [**Prototype**](./prototype/) | Interactive Dashboard Prototype | All Stakeholders |
 
 ---
 
@@ -58,8 +59,10 @@ Comprehensive documentation for the Momentum Team analytics system.
 ## Documentation Structure
 
 ```
-docs/analytics/
+momentum-team-analytics/
 ├── README.md                      # This file
+├── assets/
+│   └── MomentumTeam-hor.png       # Project logo
 ├── architecture/
 │   ├── README.md                  # Architecture Overview
 │   ├── SYSTEM_DESIGN.md           # Detailed System Design
@@ -87,14 +90,18 @@ docs/analytics/
 │   ├── INTEGRATION_METRICS.md     # Integration Metrics
 │   ├── PERFORMANCE_METRICS.md     # Error & Performance
 │   └── USER_JOURNEY.md            # User Journey & Funnels
-└── implementation/
-    ├── README.md                  # Implementation Overview
-    ├── PHASE_1_FOUNDATION.md      # Phase 1: Foundation
-    ├── PHASE_2_CHAT.md            # Phase 2: Chat Tracking
-    ├── PHASE_3_FEATURES.md        # Phase 3: Feature Tracking
-    ├── PHASE_4_BACKEND.md         # Phase 4: Backend Integration
-    ├── PHASE_5_OPTIMIZATION.md    # Phase 5: Optimization
-    └── CHECKLIST.md               # Implementation Checklist
+├── implementation/
+│   ├── README.md                  # Implementation Overview
+│   ├── PHASE_1_FOUNDATION.md      # Phase 1: Foundation
+│   ├── PHASE_2_CHAT.md            # Phase 2: Chat Tracking
+│   ├── PHASE_3_FEATURES.md        # Phase 3: Feature Tracking
+│   ├── PHASE_4_BACKEND.md         # Phase 4: Backend Integration
+│   ├── PHASE_5_OPTIMIZATION.md    # Phase 5: Optimization
+│   └── CHECKLIST.md               # Implementation Checklist
+└── prototype/                     # Interactive Dashboard Prototype
+    ├── src/                       # SvelteKit source code
+    ├── static/                    # Static assets
+    └── package.json               # Dependencies
 ```
 
 ---
@@ -109,16 +116,16 @@ This documentation is optimized for **contextual loading**:
 # Load specific contexts:
 
 ## Only Event Schema for Chat Features:
-@docs/analytics/events/CHAT_EVENTS.md
+@momentum-team-analytics/events/CHAT_EVENTS.md
 
 ## Architecture Decisions:
-@docs/analytics/architecture/README.md
+@momentum-team-analytics/architecture/README.md
 
 ## Implementation Phase 1:
-@docs/analytics/implementation/PHASE_1_FOUNDATION.md
+@momentum-team-analytics/implementation/PHASE_1_FOUNDATION.md
 
 ## All Events (Overview):
-@docs/analytics/events/README.md
+@momentum-team-analytics/events/README.md
 ```
 
 ### File Conventions
@@ -164,24 +171,63 @@ This documentation is optimized for **contextual loading**:
 
 ---
 
+## Dashboard Prototype
+
+An interactive prototype visualizing all planned dashboards with demo data.
+
+### Features
+
+- **6 Dashboard Views**: Executive Overview, Chat & AI, Knowledge Hub, Integrations, Performance, User Journey
+- **IONOS Design System**: Consistent branding with official colors and typography
+- **Interactive Charts**: ECharts-powered visualizations with hover effects
+- **Responsive Layout**: Works on desktop and tablet devices
+
+### Running the Prototype
+
+```bash
+cd prototype
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Screenshot
+
+| Dashboard | Description |
+|-----------|-------------|
+| Executive Overview | DAU/WAU/MAU, Retention, Active Users Trend |
+| Chat & AI Metrics | Message volumes, AI usage, conversation analytics |
+| Knowledge Hub | Document uploads, search analytics, collection metrics |
+| Integrations | OAuth connections, provider distribution, health status |
+| Performance | Error rates, API latency, system health |
+| User Journey | Signup funnel, retention cohorts, user segments |
+
+---
+
 ## Quick Start
 
-### 1. Understand Architecture
+### 1. View the Prototype
+```bash
+cd prototype && npm install && npm run dev
+```
+
+### 2. Understand Architecture
 ```bash
 # Start here:
-docs/analytics/architecture/README.md
+architecture/README.md
 ```
 
-### 2. Implement Events
+### 3. Implement Events
 ```bash
 # Event schema per feature:
-docs/analytics/events/CHAT_EVENTS.md
+events/CHAT_EVENTS.md
 ```
 
-### 3. Begin Phase 1
+### 4. Begin Phase 1
 ```bash
 # Implementation plan:
-docs/analytics/implementation/PHASE_1_FOUNDATION.md
+implementation/PHASE_1_FOUNDATION.md
 ```
 
 ---
@@ -190,6 +236,7 @@ docs/analytics/implementation/PHASE_1_FOUNDATION.md
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.1.0 | 2025-12-07 | Added interactive dashboard prototype with SvelteKit/ECharts |
 | 1.0.0 | 2025-12-06 | Initial documentation created |
 
 ---
